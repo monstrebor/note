@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App (Study Livewire)</title>
+    <title>Register Form (Study Livewire)</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -25,15 +25,9 @@
             </header>
         </div>
     </div>
+    
     <div id="content" class="mx-auto" style="max-width:500px;">
-        @livewire('todo-list')
-    </div>
-    <div class="m-10">
-        <a href="{{route('register-form.index')}}">
-            <button class="block m-4 px-4 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">
-                Go to register
-            </button>
-        </a>
+        @livewire('register-form')
     </div>
 
 </body>
