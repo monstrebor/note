@@ -28,10 +28,15 @@
     <div id="content" class="mx-auto" style="max-width:500px;">
         @livewire('todo-list')
     </div>
-    <div class="m-10">
+    <div class="m-10 flex justify-around">
         <a href="{{route('register-form.index')}}">
-            <button class="block m-4 px-4 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">
+            <button class="block m-4 p-4 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">
                 Go to register
+            </button>
+        </a>
+        <a href="{{route('counterApp')}}">
+            <button class="block m-4 p-4 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">
+                Go to counter app
             </button>
         </a>
     </div>

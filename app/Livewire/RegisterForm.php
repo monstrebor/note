@@ -20,14 +20,12 @@ class RegisterForm extends Component
     #[Rule('required|min:3')]
     public $password;
 
-    #[Rule('nullable|sometimes|image|max:2048')]
+    #[Rule('sometimes|image|max:2048')]
     public $image;
 
     public function create()
     {
         $validated = $this->validate();
-
-        dd($this->image, $validated);
         if ($this->image) {
             $validated['image'] = $this->image->store('uploads', 'public');
         }
